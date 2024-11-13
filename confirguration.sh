@@ -1,0 +1,1 @@
+cp confirguration.conf /etc/nginx/default.d/roboshop.conf
