@@ -16,5 +16,5 @@ systemctl start mysqld
 echo -e "\e[36m>>>>>>>>>>>>>>> setting password <<<<<<<<<<<<<\e[0m"
 mysql_secure_installation --set-root-pass RoboShop@1
 
-echo -e "\e[36m>>>>>>>>>>>>>>> logging <<<<<<<<<<<<<\e[0m"
+echo -e "\e[36m>>>>>>>>>>>>>>> logging mysql <<<<<<<<<<<<<\e[0m"
 mysql -uroot -pRoboShop@1
