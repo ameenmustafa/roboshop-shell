@@ -31,7 +31,7 @@ echo -e "\e[36m>>>>>>>>>>>>>>> installing npm <<<<<<<<<<<<<\e[0m"
 npm install
 
 echo -e "\e[36m>>>>>>>>>>>>>>> coping catalogue service file to the directory <<<<<<<<<<<<<\e[0m"
-cp catalogue.service /etc/systemd/system/catalogue.service
+cp /home/centos/roboshop-shell/catalogue.service /etc/systemd/system/catalogue.service
 
 echo -e "\e[36m>>>>>>>>>>>>>>> demon reload <<<<<<<<<<<<<\e[0m"
 systemctl daemon-reload
@@ -43,7 +43,7 @@ echo -e "\e[36m>>>>>>>>>>>>>>> stating catalogue <<<<<<<<<<<<<\e[0m"
 systemctl start
 
 echo -e "\e[36m>>>>>>>>>>>>>>> coping manogdb ropo to the directory <<<<<<<<<<<<<\e[0m"
-cp mongo.repo /etc/yum.repos.d/mongo.repo
+cp /home/centos/roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo
 
 echo -e "\e[36m>>>>>>>>>>>>>>> installing the mangodb org <<<<<<<<<<<<<\e[0m"
 dnf install mongodb-org-shell -y
