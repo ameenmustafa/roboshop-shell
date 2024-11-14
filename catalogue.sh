@@ -10,6 +10,8 @@ dnf install nodejs -y
 echo -e "\e[36m>>>>>>>>>>>>>>> adding username roboshop <<<<<<<<<<<<<\e[0m"
 useradd roboshop
 
+rm -rf /app
+
 echo -e "\e[36m>>>>>>>>>>>>>>> making app directory <<<<<<<<<<<<<\e[0m"
 mkdir /app
 
