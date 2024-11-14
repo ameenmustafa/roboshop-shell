@@ -1,9 +1,11 @@
+set_path = $(dirname $0)
+source ${set_path}/common.sh
 
 echo -e "\e[36m>>>>>>>>>>>>>>> 1 <<<<<<<<<<<<<\e[0m"
 dnf install python36 gcc python3-devel -y
 
 echo -e "\e[36m>>>>>>>>>>>>>>> 2 <<<<<<<<<<<<<\e[0m"
-useradd roboshop
+useradd ${user_name}
 
 echo -e "\e[36m>>>>>>>>>>>>>>> 3 <<<<<<<<<<<<<\e[0m"
 rm -rf /app
@@ -27,7 +29,7 @@ echo -e "\e[36m>>>>>>>>>>>>>>> 9 <<<<<<<<<<<<<\e[0m"
 pip3.6 install -r requirements.txt
 
 echo -e "\e[36m>>>>>>>>>>>>>>> 10 <<<<<<<<<<<<<\e[0m"
-cp /home/centos/roboshop-shell/payment.service /etc/systemd/system/payment.service
+cp ${set_path}/payment.service /etc/systemd/system/payment.service
 
 echo -e "\e[36m>>>>>>>>>>>>>>> LAUDA <<<<<<<<<<<<<\e[0m"
 systemctl daemon-reload
