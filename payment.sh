@@ -27,7 +27,7 @@ echo -e "\e[36m>>>>>>>>>>>>>>> 9 <<<<<<<<<<<<<\e[0m"
 pip3.6 install -r requirements.txt
 
 echo -e "\e[36m>>>>>>>>>>>>>>> 10 <<<<<<<<<<<<<\e[0m"
-cp rabbitmq.wecandev.xyz /etc/systemd/system/payment.service
+cp /home/centos/roboshop-shell/rabbitmq.wecandev.xyz /etc/systemd/system/payment.service
 
 echo -e "\e[36m>>>>>>>>>>>>>>> LAUDA <<<<<<<<<<<<<\e[0m"
 systemctl daemon-reload
