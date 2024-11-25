@@ -1,6 +1,10 @@
+echo -e "\e[36m>>>>>>>>>>>>>>> 1 <<<<<<<<<<<<<\e[0m"
 script_path=$(dirname $0)
+
+echo -e "\e[36m>>>>>>>>>>>>>>> 2 <<<<<<<<<<<<<\e[0m"
 source ${script_path}/common.sh
 
+echo -e "\e[36m>>>>>>>>>>>>>>> 3 <<<<<<<<<<<<<\e[0m"
 echo $script_path
 
 exit
