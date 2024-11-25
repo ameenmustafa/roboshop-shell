@@ -1,3 +1,10 @@
+scipt_path = $(dirname “$0”)
+source ${script_path}/common.sh
+
+echo $script_path
+
+exit
+
 echo -e "\e[36m>>>>>>>>>>>>>>> diable node versionn <<<<<<<<<<<<<\e[0m"
 dnf module disable nodejs -y
 echo -e "\e[36m>>>>>>>>>>>>>>> node js version set to 18 <<<<<<<<<<<<<\e[0m"
